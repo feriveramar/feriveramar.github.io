@@ -1,27 +1,22 @@
+<body style="font-family: 'Poppins', sans-serif;">
 <h3>Experiencia Laboral</h3>
 
-<table border="0">
-    <ul *ngFor="let work of workExperience">
-        <li>
-            <tr>
-                <td>{{ work.fecha }}</td> <td>{{work.ubicacion}}</td>
-            </tr>
-            <tr>
-                <td>{{ work.puesto }}</td>
-            </tr>
-            <tr>
-                <td>{{ work.empresa}}</td>
-            </tr>
-            <tr>
-                <td>Logros</td>
-                <ul *ngFor="let logro of work.logros">
-                    <li>
-                        <tr>
-                            <td>{{ logro.descripcion }}</td>
-                        </tr>
-                    </li>
-                </ul>
-            </tr>
-        </li>
-    </ul>
-</table>
+<div class="work-experience-container">
+  <div *ngFor="let work of workExperience" class="work-item">
+    <div class="work-details">
+      <div class="work-date-location">
+        <span class="work-date">{{ work.fecha }}</span>
+        <span class="work-location">{{ work.ubicacion }}</span>
+      </div>
+      <div class="work-position">{{ work.puesto }}</div>
+      <div class="work-company">{{ work.empresa }}</div>
+    </div>
+    <div class="work-achievements">
+      <strong>Logros:</strong>
+      <ul>
+        <li *ngFor="let logro of work.logros">{{ logro.descripcion }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
