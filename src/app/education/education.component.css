@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* education.component.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9; /* Fondo claro para un diseño limpio */
+    margin: 0;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #044d12; /* Color oscuro y elegante */
+}
+
+.education-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.education-item {
+    background-color: #ebeee5;
+    border: 1px solid #ebeee5; /* Borde gris claro */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.education-date {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #003710; /* Rojo oscuro elegante para destacar la fecha */
+    margin-bottom: 10px;
+}
+
+.education-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+.education-name {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #2b2d42;
+}
+
+.education-faculty, .education-career, .education-location {
+    font-size: 1rem;
+    color: #4e4f67; /* Gris oscuro para el resto de los detalles */
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .education-container {
+        width: 95%;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .education-name {
+        font-size: 1.2rem;
+    }
+}
