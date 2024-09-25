@@ -1,20 +1,16 @@
-<h3>Educacion</h3>
+<body style="font-family: 'Poppins', sans-serif;">
+<h3>Educación</h3>
 
-<table border="0">
-    <ul *ngFor="let uni of education">
-        <li>
-            <tr>
-                <td>{{ uni.fecha }}</td> 
-            </tr>
-            <tr>
-                <td>{{uni.ubicacion}}</td>
-            </tr>
-            <tr>
-                <td>{{ uni.facultad }}</td>
-            </tr>
-            <tr>
-                <td>{{ uni.carrera }}</td>
-            </tr>
-        </li>
-    </ul>
-</table>
+<div class="education-container">
+  <div *ngFor="let uni of education" class="education-item">
+    <div class="education-date">{{ uni.fecha }}</div>
+    <div class="education-details">
+      <div class="education-name">{{ uni.nombre }}</div>
+      <div class="education-faculty">{{ uni.facultad }}</div>
+      <div class="education-career">{{ uni.carrera }}</div>
+      <div class="education-location">{{ uni.ubicacion }}</div>
+    </div>
+  </div>
+</div>
+</body>
+

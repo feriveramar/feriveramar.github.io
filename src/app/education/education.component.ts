@@ -17,6 +17,9 @@ export class EducationComponent {
       ubicacion:"Campus Ixtaczoquitlan",
       facultad:"Ciencias y Tecnologias",
       carrera:"ingenieria de software",
+      nombre:"Universidad Veracruzana",
+
+
       /*Certificados: [
         {descripcion: ""},
         {descripcion: ""}
