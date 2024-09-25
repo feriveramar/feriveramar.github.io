@@ -1,6 +1,28 @@
-<section class="skills">
-    <h1 id="skills_title">Skills</h1>
-    <div id="skills_items">
-      <p id="skill" *ngFor="let skill of skills">{{skill.description}}</p>
+<body style="font-family: 'Poppins', sans-serif;">
+<div>
+  <h3>Habilidades y Competencias</h3>
+  <div class="skills-competences">
+    <div class="progress-container">
+      <div class="levels">
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+        <span>|</span>
+      </div>
     </div>
-  </section>
+    <div class="skills-container">
+      <div class="skill" *ngFor="let skill of skills">
+        <span>{{ skill.habilidad }}</span>
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div
+              class="progress"
+              [style.width.%]="(skill.nivel / 4) * 100"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
