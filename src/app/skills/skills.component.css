@@ -38,7 +38,7 @@ h3 {
     position: absolute;
     width: 400px; /* Asegura que ocupa el ancho total del contenedor */
     top: -20px; /* Ajusta según sea necesario para alinear con la barra de progreso */
-    left: 350px;
+    left: 400px;
   }
 
   .levels span {
