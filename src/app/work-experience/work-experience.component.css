@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* work-experience.component.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 10px;
+    border-radius: 8PX;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #004202; /* Texto en blanco para mejor contraste */
+    padding: 10px;
+    border-radius: 8px;
+   
+}
+
+.work-experience-container {
+    width: 80%; /* Ajustado al 80% para mejor adaptación en pantallas */
+    margin: 0 auto;
+}
+
+.work-item {
+    margin-bottom: 20px;
+    border: 1px solid #ebeee5; /* Color de borde más suave */
+    border-radius: 8px;
+    padding: 15px;
+    background-color:  #ebeee5;;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; /* Suaviza la transición de sombra */
+}
+
+.work-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más intensa al hacer hover */
+}
+
+.work-details {
+    margin-bottom: 15px;
+}
+
+.work-date-location {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-date {
+    font-weight: bold;
+    color: #032208; /* Color para resaltar la fecha */
+}
+
+.work-location {
+    font-weight: bold;
+    color: #99b399; /* Color para resaltar la ubicación */
+}
+
+.work-position {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #555;
+    margin: 10px 0;
+}
+
+.work-company {
+    font-size: 1rem;
+    color: #888888;
+}
+
+.work-achievements ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.work-achievements li {
+    color: #444;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.work-achievements li:before {
+    content: "• "; /* Agrega un punto antes del logro */
+    color: #519a46; /* Color verde para el punto */
+    font-weight: bold;
+}
+
+/* Ajustes adicionales para mejorar el diseño responsivo */
+@media (max-width: 768px) {
+    .work-experience-container {
+        width: 100%; /* Ajusta el ancho del contenido en pantallas más pequeñas */
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .work-position, .work-company {
+        font-size: 0.9rem;
+    }
+}
