@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
+h3 {
+  text-align: center;
+  font-size:2rem;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+
+
+
+
 .skills-competences {
     margin: 20px;
   }
