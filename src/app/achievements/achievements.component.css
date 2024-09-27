@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* achievements.component.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9; /* Color de fondo */
+    margin: 0;
+    padding: 20px;
+}
+
+.achievements {
+    max-width: 800px; /* Ancho máximo para centrar el contenido */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#achievements_title {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.achievements_items {
+    display: flex;
+    align-items: center; /* Alinea los elementos verticalmente */
+    margin-bottom: 20px;
+    background-color: #fff; /* Fondo blanco para cada logro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Espaciado interno */
+
+}
+
+
+.cuadradito {
+    width: 20px; /* Tamaño del cuadrado */
+    height: 20px;
+    background-color: #075226; /* Color del cuadrado */
+    border-radius: 4px; /* Bordes redondeados */
+    margin-right: 15px; /* Espacio entre el cuadrado y el texto */
+}
+
+.item {
+    font-size: 1.2rem;
+    color: #555; /* Color del texto */
+    margin: 0; /* Elimina margen por defecto */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    #achievements_title {
+        font-size: 2rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .achievements_items {
+        flex-direction: column; /* Cambia a vertical en pantallas pequeñas */
+        align-items: flex-start; /* Alinea el texto a la izquierda */
+    }
+
+    .cuadradito {
+        margin-bottom: 10px; /* Espacio inferior en pantallas pequeñas */
+    }
+}

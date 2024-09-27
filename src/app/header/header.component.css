@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+table {
+    
+    width: 60%;  
+    background-color: #ebeee5;
+    border-collapse: collapse;
+    border-radius: 10px;
+    padding: 50px;
+    
+    /* Centrar la tabla en la pantalla */
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+}
+
+
+
+/* Espaciado y alineación de las celdas */
+td {
+    padding: 20px;
+    vertical-align: middle;
+}
+
+/* Estilo para el texto */
+td:nth-child(1) p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+}
+
+td:nth-child(1) p:nth-child(2) {
+    font-size: 18px;
+    font-weight: 500;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+td:nth-child(1) p:nth-child(3) {
+    font-size: 16px;
+    color: #95a5a6;
+    margin-top: 5px;
+}
+
+/* Estilo de la imagen */
+img {
+    border-radius: 50%;
+    border: 4px solid #2d571f;
+    width: 120px;
+    height: 120px;
+}
+
+/* Estilo para la lista de información de contacto */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #34495e;
+}
+
+/* Puntos azules antes de los elementos de la lista */
+ul li:before {
+    content: '•';
+    color: #0c2502;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Ajuste de ancho para que ocupe toda la pantalla */
+td:nth-child(1) {
+    width: 40%;
+}
+
+td:nth-child(2) {
+    text-align: center;
+    width: 20%;
+}
+
+td:nth-child(3) {
+    width: 40%;
+    text-align: left;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        padding: 10px;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    img {
+        margin: 0 auto 20px auto;
+    }
+}
